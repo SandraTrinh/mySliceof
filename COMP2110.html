@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+    <head>
+        <meta charset="utf-8">
+        <title>Web Technology</title>
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- scripts -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+        <script src="https://media.mq.edu.au/mmcc2140/resources/manual/js/mq-gallery.js" defer></script>
+        <script src="topButton.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to Sandra's Semester</h1>
+        </header>
+        <nav>
+            <a href="index.html" id="homeA">Home</a>
+            <a href="highlights.html" id="highlightsA">Highlights</a>
+            <a href="MMCC2140.html" class="unitsA">Cybercultures</a>
+            <a href="COMP2150.html" class="unitsA">Game Design</a>
+            <a href="COMP2110.html" class="unitsA">Web Technology</a>
+            <a href="resources.html" id="resourcesA">Resources</a>
+            <div class="clearfix"></div>
+        </nav>
+        <section class="content">
+            <div>
+                <h2>COMP2110 Web Technology</h2>
+                <h3>My images...</h3>
+                <p>For the last web site assignment for this unit,
+                     I had to make a image sharing site that fetch 
+                     data from a data base. For fun I designed and created eleven simple
+                     art works on paint to be place holders on my site.</p>
+                <p>Here are the master pieces I created. </p>
+            </div>
+            <div>
+                <!-- gallery code taken from MMCC2140 workshop manual chapter 9 -->
+                <article>
+                    <h3 id="galleryH3">My gallery of paint art:</h3>
+                    <div class="galleryWrap">
+                    <img class="mq-gallery" src="images/webtechnology/th-babybluebgpinkcircles.jpg" alt="baby blue background and pink circles" data-large="images/webtechnology/babybluebgpinkcircles.jpg">
+                    <img class="mq-gallery" src="images/webtechnology/th-babypinkbgwithpowderyellowtriangle.jpg" alt="pink and yellow" data-large="images/webtechnology/babypinkbgwithpowderyellowtriangle.jpg">
+                    <img class="mq-gallery" src="images/webtechnology/th-blackbgwithbluepules.jpg" alt="black and blue lines" data-large="images/webtechnology/blackbgwithbluepules.jpg">
+                    <img class="mq-gallery" src="images/webtechnology/th-blueonblue.jpg" alt="blue on blue" data-large="images/webtechnology/blueonblue.jpg">
+                    <img class="mq-gallery" src="images/webtechnology/th-GreenTurtle.jpg" alt="green" data-large="images/webtechnology/GreenTurtle.jpg">
+                    <img class="mq-gallery" src="images/webtechnology/th-hexiblue.jpg" alt="blue hexigon" data-large="images/webtechnology/hexiblue.jpg">
+                    <img class="mq-gallery" src="images/webtechnology/th-pinkdiamonds.jpg" alt="pink diamonds" data-large="images/webtechnology/pinkdiamonds.jpg">
+                    <img class="mq-gallery" src="images/webtechnology/th-purpleclouds.jpg" alt="purple clouds" data-large="images/webtechnology/purpleclouds.jpg">
+                    <img class="mq-gallery" src="images/webtechnology/th-reddiamondbluebg.jpg" alt="red diamond on blue background" data-large="images/webtechnology/reddiamondbluebg.jpg">
+                    <img class="mq-gallery" src="images/webtechnology/th-twoyellowcircles.jpg" alt="yellow circles" data-large="images/webtechnology/twoyellowcircles.jpg">
+                    <img class="mq-gallery" src="images/webtechnology/th-yellowstars.jpg" alt="yellow stars" data-large="images/webtechnology/yellowstars.jpg">
+                    </div>
+                </article>
+            </div>
+            <!-- Top button code from W3school https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+        </section>
+        <footer>
+            <p>&#x00A9; Copyright Sandra Trinh</p>
+        </footer>
+    </body>
+</html>
