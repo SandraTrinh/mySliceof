@@ -1,0 +1,379 @@
+/* ref: google font Roboto Mono Regular 400
+link: https://fonts.google.com/specimen/Roboto+Mono?query=mono
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+/*------------clear fix-------------*/
+.clearfix {
+    clear: both;
+}
+
+/*--------------body--------------- */
+body {
+    width: 900px;
+    margin: 0 auto 0 auto;
+    background-color: rgb(100, 100, 100);
+    /* background image from Wallpaper flare web site.*/
+    /* untitled, dark, pattern, texture, full frame, backgrounds, indoors 1920x1080px (1080P) */
+    /* https://www.wallpaperflare.com/untitled-dark-pattern-texture-full-frame-backgrounds-indoors-wallpaper-pnsfw/download/1920x1080 */
+    background-image: url("images/untitled\,\ dark\,\ pattern\,\ texture\,\ full\ frame\,\ backgrounds\,\ indoors\ 1920x1080px\ \(1080P\).jpg");
+    background-attachment: fixed;    
+}
+
+header, nav, section, footer{
+    background-color: rgb(54, 54, 54);
+    padding: 20px;
+    margin: 0;
+}
+
+/* ----------header---------- */
+header {
+    text-align: center;
+}
+
+h1 {
+    color: aqua;
+}
+
+/*----------nav bar ----------- */
+nav {
+    background-color: rgb(38, 38, 38);
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+nav a {
+    padding: 16px;
+    margin: 3px;
+    border: 3px solid white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(145, 90, 195);
+    
+}
+
+#homeA {
+    color:rgb(110, 225, 20);
+    border-color: rgb(220, 10, 90);
+}
+
+#homeA:hover {
+    color: rgb(220, 10, 90);
+    border-color: rgb(235, 235, 30);
+}
+
+#highlightsA {
+    color: rgb(235, 235, 30);
+    border-color: rgb(110, 225, 20);
+}
+
+#highlightsA:hover {
+    color: rgb(110, 225, 20);
+    border-color: white;
+}
+
+.unitsA {
+    color: rgb(145, 90, 195);
+    border-color: aqua;
+}
+
+.unitsA:hover {
+    color: aqua;
+    border-color: rgb(145, 90, 195);
+}
+
+#resourcesA {
+    color: aqua;
+}
+
+#resourcesA:hover {
+    color: rgb(235, 235, 30);
+    border-color: rgb(220, 10, 90);
+}
+
+/* ----------Scroll to the top------ */
+
+/* Top button CSS code from W3school https://www.w3schools.com/howto/howto_js_scroll_to_top.asp           */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(220, 10, 90); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: rgb(100, 100, 100); /* Add a dark-grey background on hover */
+}
+
+/*--------------content---------- */
+section {
+    padding: 0;
+}
+
+h2 { 
+    /* dark pink */
+    color: rgb(220, 10, 90);
+    padding: 20px 20px 0 20px;
+}
+
+h3 {
+    /* lime green */
+    color: rgb(110, 225, 20);
+    padding: 0 20px 0 20px;
+}
+
+p {
+    padding: 0 20px 20px 20px;
+}
+
+ul {
+    /* bullet point images is drawn by me but inspired by replit's email format */
+    list-style-image: url('images/yellow_pixel_Arrow_bullet_point_small.png');
+}
+
+li {
+    padding: 10px;
+}
+
+iframe {
+    width:560px; 
+    height:315px;
+}
+
+.content a:active, .content a:visited {
+    color: rgb(145, 90, 195);
+}
+
+.content a {
+    /* Yellow */
+    color: rgb(235, 235, 30);
+}
+
+.content a:hover {
+    color: aqua;
+}
+
+article:nth-child(odd) {
+    background-color: rgb(38, 38, 38);
+    margin: 0;
+}
+
+/* Home ID card section */
+#idCard img{
+    float: left;
+ margin: 40px;
+}
+#idCard ul {
+    border: 3px solid aqua;
+    margin: 40px;
+    padding: 50px;
+    float: left;
+}
+#idCard ul li {
+    padding: 15px;
+}
+/* ------music video section */
+.songBox {
+    display: flex;
+    
+}
+
+.songBox div {
+  float: left;
+}
+
+/* .songBox p {
+   
+} */
+
+.video {
+   padding: 25px;
+}
+
+/* --------------TABS */
+/* Tab CSS gotten from W3school  https://www.w3schools.com/howto/howto_js_tabs.asp*/
+ /* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid black;
+    background-color: rgb(38, 38, 38);
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: rgb(54, 54, 54);
+    color: rgb(220, 10, 90);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: black;
+    color: rgb(235, 235, 30);
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid black;
+    border-top: none;
+    align-items: center;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+} 
+
+.tabcontent div.contentTabP {
+/* border: 1px solid white; */
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+
+.mySlides1, .mySlides2 {
+    /* https://www.w3schools.com/cssref/css3_pr_transform.asp */
+    transform: rotate(270deg);
+}
+
+.tabcontent img {
+    padding: 20px 0 20px 0;
+    float: right;
+}
+
+.tabcontent div.contentTab {
+    padding: 0 50px 0 0;
+    width: 95%;
+    margin: auto;
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* css code taken from W3school stylesheet */
+/* https://www.w3schools.com/w3css/4/w3.css */
+.w3-animate-fading{
+    /* change to 5 seconds. orgiginal is 10s */
+    animation:fading 5s infinite
+}
+
+@keyframes fading{
+    0%{opacity:0}
+    50%{opacity:1}
+    100%{opacity:0}
+}
+
+/* ----------------------Cybercultures */
+/* reference */
+#ref p {
+    padding: 0 20px 10px 20px;
+}
+
+/* -----------------------game design */
+
+/* level 1 */
+#level1 div{
+   display: grid;
+}
+
+#level1 img {
+    margin: 20px;
+    grid-row: 1/4;
+}
+
+#level1 #p1 {
+    grid-column: 3/4;
+
+}
+
+
+#level1 img#player {
+ grid-column: 3/4;
+ grid-row: 2;
+}
+
+#level1 #p2 {
+    grid-column: 3/4;
+    grid-row: 3;
+}
+
+/* level 2 */
+
+#level2 img, #level3 img {
+    display: block;
+    margin: auto;
+}
+
+#level3 div{
+    padding-bottom: 30px;
+}
+
+#level3 h3, #galleryH3 {
+    padding: 20px 20px 0 20px;
+}
+
+/* -----------------Web Technology */
+/* Gallery */
+/* CSS code taken from MMCC2140 workshop manual and modified */
+
+div.galleryWrap {
+    width: 900px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+div.galleryWrap img {
+    margin: 20px;
+    border: 5px solid white;
+    transition: 0.5s;
+    border-radius: 150px;
+    box-shadow: 0 0 15px 10px rgb(100, 100, 100);
+}
+
+div.galleryWrap img:hover {
+    opacity: 0.5;
+    border-radius: 50px;
+    margin: 40px;
+    box-shadow: 0 0 5px 20px black;
+}
+
+
+/*-------------footer------------- */
+footer {
+    background-color: rgb(38, 38, 38);
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+
+
